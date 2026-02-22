@@ -3,6 +3,9 @@
 
 .idea
 
+utils/dp_api/main.db
+main.db
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
