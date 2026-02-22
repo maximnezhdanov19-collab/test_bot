@@ -1,0 +1,76 @@
+[
+  {
+    "question": "Вопрос # 1\n\nКак называется язык программирования, который используется для создания веб-сайтов?",
+    "answer": [
+      "Python",
+      "JavaScript",
+      "C#"
+    ],
+    "right_answer": "JavaScript",
+    "photo": "https://repository-images.githubusercontent.com/394788831/989fac57-9aca-4f73-9fad-a5da436aa29c"
+  },
+  {
+    "question": "Вопрос # 2\n\nКак называется язык программирования, который используется для создания мобильных приложений под iOS?",
+    "answer": [
+      "Swift",
+      "Kotlin",
+      "Java"
+    ],
+    "right_answer": "Swift",
+    "photo": "https://avatars.dzeninfra.ru/get-zen_doc/5175112/pub_5ee0eafd4121087f382930d5_62e2567fefd3e21b6e6b653f/scale_1200"
+  },
+  {
+    "question": "Вопрос # 3\n\nКак называется язык программирования, который используется для создания операционных систем?",
+    "answer": [
+      "C#",
+      "C++",
+      "C"
+    ],
+    "right_answer": "C",
+    "photo": "https://static.skillshare.com/uploads/video/thumbnails/b9455fc40a4053509ef0a77b8ddb6a51/original"
+  },
+  {
+    "question": "Вопрос # 4\n\nКак называется язык разметки для создания скелета сайта?",
+    "answer": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Python"
+    ],
+    "right_answer": "HTML",
+    "photo": "https://rwvt.ru/wp-content/uploads/c/8/b/c8b51a6f2a207b574cc1d8115f92dee6.jpeg"
+  },
+  {
+    "question": "Вопрос # 5\n\nКак называется язык программирования, который используется для написания серверной части приложения?",
+    "answer": [
+      "Dart",
+      "Lisp",
+      "SQL",
+      "Golang"
+    ],
+    "right_answer": "Golang",
+    "photo": "https://media.proglib.io/posts/2020/06/21/7de66fb74126faed10a27662499efa1e.png"
+  },
+  {
+    "question": "Вопрос # 6\n\nКак называется язык программирования, который используется для создания искуственного интеллекта?",
+    "answer": [
+      "С++",
+      "Java",
+      "Python",
+      "Lua"
+    ],
+    "right_answer": "Python",
+    "photo": "https://avatars.mds.yandex.net/i?id=997b356027d9ac832cb248d399d745b2_l-5235821-images-thumbs&n=13"
+  },
+  {
+    "question": "Вопрос # 7\n\nКак называется язык программирования, который используется для создания игр в Roblox?",
+    "answer": [
+      "Lua",
+      "JavaScript",
+      "Kotlin",
+      "C++"
+    ],
+    "right_answer": "Lua",
+    "photo": "https://static35.tgcnt.ru/posts/_0/db/dbffd476f692b264a26e75f57e67c68e.jpg"
+  }
+]
