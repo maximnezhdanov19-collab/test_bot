@@ -4,6 +4,6 @@ WORKDIR /home/bot
 
 COPY . .
 
-RUN pip install -r requirements.txt
+RUN pip install --index-url=https://pypi.tuna.tsinghua.edu.cn/simple --default-timeout=100 -r requirements.txt
 
 CMD ["python3", "app.py"]
