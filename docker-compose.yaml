@@ -1,0 +1,29 @@
+services:
+  bot:
+    build: .
+    networks:
+      - bot_network
+    volumes:
+      - .:/home/bot
+
+  db:
+    image: postgres:18-trixie
+    restart: unless-stopped
+    shm_size: 128mb
+
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DATABASE: ${POSTGRES_DATABASE}
+    networks:
+      - bot_network
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+networks:
+  bot_network:
+    driver: bridge
+
+volumes:
+  bot_data:
+  db_data:

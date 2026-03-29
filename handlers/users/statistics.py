@@ -56,7 +56,7 @@ async def user_blocked_bot(event: ChatMemberUpdated):
         query = select(Users).where(Users.telegram_id == id)
         result = await session.execute(query)
         user: Users = result.scalar_one_or_none()
-        user.is_active = True
+        user.is_active = False
         await session.commit()
         print('Пользователь заблокал бота и его добавили в базе данных')
 
