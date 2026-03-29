@@ -1,13 +1,12 @@
 import logging
+import os
 
+import dotenv
 from aiogram import Bot, Dispatcher
+from aiogram.client.session.aiohttp import AiohttpSession
+from filters.is_group import IsGroup
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
-
-from filters.is_chat import IsChat
-from filters.is_group import IsGroup
-from middlewares.all_in_one import AllInOne
-import os, dotenv
 
 dotenv.load_dotenv()
 
@@ -16,7 +15,14 @@ PASSWORD = os.getenv("PASSWORD")
 DATABASE_URL = rf'{os.getenv("DATABASE_URL")}'
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=BOT_TOKEN)
+
+TG_PROXY_URL = os.getenv("TG_PROXY_URL")
+session = AiohttpSession(TG_PROXY_URL)
+
+bot = Bot(token=BOT_TOKEN,
+          session=session
+          )
+
 dp = Dispatcher()
 
 engine = create_async_engine(url=DATABASE_URL, echo=False)
@@ -31,4 +37,3 @@ dp.include_router(user_router)
 group_router.message.filter(IsGroup())
 
 # dp.update.middleware(AllInOne())
-
